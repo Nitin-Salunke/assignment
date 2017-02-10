@@ -5,7 +5,6 @@ class ArrayOperation
 		temp_max_ending_here = max_ending_here = max_so_far = start_index = end_index = 0
 		array.each_with_index do |item, index|
 			max_ending_here = [0, max_ending_here + item].max
-
 	  		start_index = index  if temp_max_ending_here.eql?(0) && !max_ending_here.eql?(0)
 	  		temp_max_so_far = max_so_far
 	        max_so_far = [max_so_far, max_ending_here].max
